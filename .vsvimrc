@@ -1,0 +1,17 @@
+set nocompatible
+set noexpandtab
+set tabstop=4 shiftwidth=4
+set backspace=indent,eol,start
+set textwidth=80
+
+set number
+set nojoinspaces
+set nrformats=
+
+imap <C-H> <Left>
+imap <C-J> <Down>
+imap <C-K> <Up>
+imap <C-L> <Right>
+
+nmap <leader>l :set list! number!<CR>
+set list

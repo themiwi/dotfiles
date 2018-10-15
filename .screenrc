@@ -1,0 +1,5 @@
+hardstatus on
+hardstatus alwayslastline
+startup_message off
+defscrollback 10000
+escape ^Jj

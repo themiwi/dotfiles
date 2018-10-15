@@ -1,0 +1,4 @@
+MyEditor=(open -a "MacVim")
+HTML_Editor=(open -a "MacVim")
+ImageEditor=(open -a "Adobe Photoshop CS3")
+PDFdisplay=(open -a "Preview")

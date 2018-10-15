@@ -1,0 +1,63 @@
+# Some aliases to avoid making mistakes
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# always want vim
+#alias vi='vim --servername $USER@$HOST'
+alias vi='vim'
+
+# git status
+gitst() {
+  local bak
+  bak=$(git config --get color.pager)
+  trap "git config color.pager ${bak}; trap ZERR ERR TERM INT EXIT" \
+    ZERR ERR TERM INT EXIT
+  git config color.pager true || return 1
+  GIT_PAGER=/usr/bin/less git -p status || return 1
+}
+
+## git merge status
+#git-mergestat() {
+#  git ls-files -u -- $@ | ~/Projects/FreeFOAM-tools/mergetools/mergestat.py
+#}
+#
+## git resolve includes
+#git-resolve-includes() {
+#  for f in $@; do
+#    ~/Projects/FreeFOAM-tools/mergetools/resolveIncludes.py $f
+#  done
+#}
+
+# ipython dumps colours which interfere with vimpager, so use 'less' there
+alias ipython='PAGER=less LESS=-r ipython'
+#alias ipython3='PAGER=less LESS=-r ipython3'
+
+alias grep='grep $GREP_OPTIONS'
+
+# use hub as git
+#function git(){hub "$@"}
+
+alias see=cygstart
+
+alias npm='cmd /c npm'
+alias gulp='cmd /c gulp'
+
+alias npm_proxy='npm config set proxy http://zrhuse04:Linux123@10.5.0.52:8080 && npm config set https-proxy http://zrhuse04:Linux123@10.5.0.52:8080/'
+alias npm_unproxy='npm config delete proxy && npm config delete https-proxy'
+
+timereport() {
+  cd /tmp
+  python /drives/d/Projects/timereport/timereport.py $@ \
+     "//andritz.com/Dfs/HYDRO-CH/Kriens/HS/05_R&D/12_Pelton_Technology/00-AdminPublic/01-Ventilation/2015/Users Ventilation/IT R&D/WIH_data/zrhmic03"
+  rm -f python2.7.exe.stackdump
+}
+
+listcolors() {
+  for i in {0..255} ; do
+      printf "\x1b[38;5;${i}m%3d " "${i}"
+      if (( $i == 15 )) || (( $i > 15 )) && (( ($i-15) % 12 == 0 )); then
+          echo;
+      fi
+  done
+}

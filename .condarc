@@ -1,0 +1,10 @@
+# Proxy settings: http://[username]:[password]@[server]:[port]
+#proxy_servers:
+#    http: http://zrhuse04:Linux123@10.5.0.52:8080
+#    https: https://zrhuse04:Linux123@10.5.0.52:8080
+
+channels:
+  - conda-forge
+  - defaults
+  - michael_wild
+anaconda_upload: yes

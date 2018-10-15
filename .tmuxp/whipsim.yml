@@ -1,0 +1,9 @@
+session_name: whipsim
+shell_command_before: cd /drives/d/Projects/WHIPSIM
+windows:
+- layout: 3d5b,207x65,0,0{103x65,0,0,10,103x65,104,0[103x32,104,0,13,103x32,104,33,14]}
+  window_name: editor
+  panes:
+  - null
+  - null
+  - null

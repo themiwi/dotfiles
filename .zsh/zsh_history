@@ -1,0 +1,500 @@
+make
+ccmake .
+make -j2
+git diff
+make install
+../configure PKG_CONFIG_PATH=$HOME/Library/homebrew/lib/pkgconfig:$HOME/Projects/libgee/build/prefix/lib/pkgconfig:/sw/lib/pkgconfig VALAFLAGS="--vapidir $HOME/Projects/libgee/build/prefix/share/vala/vapi" CPPFLAGS="-I$HOME/Library/homebrew/include" PATH=$HOME/Projects/vala/build/prefix/bin
+../configure PKG_CONFIG_PATH=$HOME/Library/homebrew/lib/pkgconfig:$HOME/Projects/libgee/build/prefix/lib/pkgconfig:/sw/lib/pkgconfig VALAFLAGS="--vapidir $HOME/Projects/libgee/build/prefix/share/vala/vapi" CPPFLAGS="-I$HOME/Library/homebrew/include" PATH=$HOME/Projects/vala/build/prefix/bin:$PATH
+make
+make clean
+make
+ls
+rm -rf *
+../configure PKG_CONFIG_PATH=$HOME/Library/homebrew/lib/pkgconfig:$HOME/Projects/libgee/build/prefix/lib/pkgconfig:/sw/lib/pkgconfig VALAFLAGS="--vapidir $HOME/Projects/libgee/build/prefix/share/vala/vapi" CPPFLAGS="-I$HOME/Library/homebrew/include" PATH=$HOME/Projects/vala/build/prefix/bin:$PATH
+vi Makefile
+make -j2
+make
+make |& less
+rm -f vapi/vala-1.0.vapi
+vi ValaCreateVapi.cmake.in
+cmake
+cmake .
+make install
+make
+vi ../src/libvaladoc/Makefile.am
+vi ../src/valadoc/Makefile.
+vi ../src/valadoc/Makefile.am
+make
+vi ../autogen.sh
+../autogen.sh PKG_CONFIG_PATH=$HOME/Library/homebrew/lib/pkgconfig:$HOME/Projects/libgee/build/prefix/lib/pkgconfig:/sw/lib/pkgconfig VALAFLAGS="--vapidir $HOME/Projects/libgee/build/prefix/share/vala/vapi" CPPFLAGS="-I$HOME/Library/homebrew/include" PATH=$HOME/Projects/vala/build/prefix/bin:$PATH
+PATH=/sw/bin:$PATH ../autogen.sh PKG_CONFIG_PATH=$HOME/Library/homebrew/lib/pkgconfig:$HOME/Projects/libgee/build/prefix/lib/pkgconfig:/sw/lib/pkgconfig VALAFLAGS="--vapidir $HOME/Projects/libgee/build/prefix/share/vala/vapi" CPPFLAGS="-I$HOME/Library/homebrew/include" PATH=$HOME/Projects/vala/build/prefix/bin:$PATH
+make
+vi libtool
+rm -rf ../aclocal.m4
+PATH=/sw/bin:$PATH ../autogen.sh PKG_CONFIG_PATH=$HOME/Library/homebrew/lib/pkgconfig:$HOME/Projects/libgee/build/prefix/lib/pkgconfig:/sw/lib/pkgconfig VALAFLAGS="--vapidir $HOME/Projects/libgee/build/prefix/share/vala/vapi" CPPFLAGS="-I$HOME/Library/homebrew/include" PATH=$HOME/Projects/vala/build/prefix/bin:$PATH
+vi ../autogen.sh
+PATH=/sw/bin:$PATH ../autogen.sh PKG_CONFIG_PATH=$HOME/Library/homebrew/lib/pkgconfig:$HOME/Projects/libgee/build/prefix/lib/pkgconfig:/sw/lib/pkgconfig VALAFLAGS="--vapidir $HOME/Projects/libgee/build/prefix/share/vala/vapi" CPPFLAGS="-I$HOME/Library/homebrew/include" PATH=$HOME/Projects/vala/build/prefix/bin:$PATH
+make
+vi ../src/doclets/**/Makefile.am
+PATH=/sw/bin:$PATH ../autogen.sh PKG_CONFIG_PATH=$HOME/Library/homebrew/lib/pkgconfig:$HOME/Projects/libgee/build/prefix/lib/pkgconfig:/sw/lib/pkgconfig VALAFLAGS="--vapidir $HOME/Projects/libgee/build/prefix/share/vala/vapi" CPPFLAGS="-I$HOME/Library/homebrew/include" PATH=$HOME/Projects/vala/build/prefix/bin:$PATH
+make
+ls **/valadoc-1.0.vapi
+vi ../src/doclets/**/Makefile.am
+make
+PATH=/sw/bin:$PATH ../autogen.sh PKG_CONFIG_PATH=$HOME/Library/homebrew/lib/pkgconfig:$HOME/Projects/libgee/build/prefix/lib/pkgconfig:/sw/lib/pkgconfig VALAFLAGS="--vapidir $HOME/Projects/libgee/build/prefix/share/vala/vapi" CPPFLAGS="-I$HOME/Library/homebrew/include" PATH=$HOME/Projects/vala/build/prefix/bin:$PATH
+make
+vi ../src/doclets/**/Makefile.am
+make
+make PATH=/sw/bin:$PATH
+PATH=/sw/bin:$PATH ../autogen.sh PKG_CONFIG_PATH=$HOME/Library/homebrew/lib/pkgconfig:$HOME/Projects/libgee/build/prefix/lib/pkgconfig:/sw/lib/pkgconfig VALAFLAGS="--vapidir $HOME/Projects/libgee/build/prefix/share/vala/vapi" CPPFLAGS="-I$HOME/Library/homebrew/include" PATH=$HOME/Projects/vala/build/prefix/bin:$PATH
+make
+vi ../src/doclets/valadoc.org/Makefile.am
+make PATH=/sw/bin:$PATH
+PATH=/sw/bin:$PATH ../autogen.sh PKG_CONFIG_PATH=$HOME/Library/homebrew/lib/pkgconfig:$HOME/Projects/libgee/build/prefix/lib/pkgconfig:/sw/lib/pkgconfig VALAFLAGS="--vapidir $HOME/Projects/libgee/build/prefix/share/vala/vapi" CPPFLAGS="-I$HOME/Library/homebrew/include" PATH=$HOME/Projects/vala/build/prefix/bin:$PATH --prefix=$PWD/prefix
+make install
+/Users/mwild/Projects/valadoc-tmp/build/prefix/bin/valadoc --doclet=html -o /Users/mwild/Projects/libgee/build/doc/gee-1.0/ --wiki /Users/mwild/Projects/libgee/doc --force -b /Users/mwild/Projects/libgee --vapidir /Users/mwild/Projects/vala/build/vapi /Users/mwild/Projects/libgee/gee/abstractcollection.vala /Users/mwild/Projects/libgee/gee/hashset.vala /Users/mwild/Projects/libgee/gee/{iterable.vala,collection.vala,abstractset.vala,iterator.vala,set.vala,functions.vala,comparable.vala,readonlycollection.vala,readonlyset.vala}
+otool -L prefix/lib/libvaladoc.dylib
+rm -f **/*.dylib
+rm -f .*/**/*.dylib
+find . -name \*.dylib
+rm -f src/libvaladoc/.libs/**/*.dylib
+find . -name \*.dylib
+make install
+make
+cd src/libvaladoc
+make
+ls
+rm -f documentationparser.*
+make
+cd -
+make install
+otool -L prefix/lib/libvaladoc.dylib
+/Users/mwild/Projects/valadoc-tmp/build/prefix/bin/valadoc --doclet=html -o /Users/mwild/Projects/libgee/build/doc/gee-1.0/ --wiki /Users/mwild/Projects/libgee/doc --force -b /Users/mwild/Projects/libgee --vapidir /Users/mwild/Projects/vala/build/vapi /Users/mwild/Projects/libgee/gee/abstractcollection.vala /Users/mwild/Projects/libgee/gee/hashset.vala /Users/mwild/Projects/libgee/gee/{iterable.vala,collection.vala,abstractset.vala,iterator.vala,set.vala,functions.vala,comparable.vala,readonlycollection.vala,readonlyset.vala}
+otool -L prefix/lib/valadoc/plugins/html/libdoclet.so
+find . -name \*.so | xargs rm -f
+cd src/doclets
+make clean
+make
+cd -
+make install
+otool -L prefix/lib/valadoc/plugins/html/libdoclet.so
+/Users/mwild/Projects/valadoc-tmp/build/prefix/bin/valadoc --doclet=html -o /Users/mwild/Projects/libgee/build/doc/gee-1.0/ --wiki /Users/mwild/Projects/libgee/doc --force -b /Users/mwild/Projects/libgee --vapidir /Users/mwild/Projects/vala/build/vapi /Users/mwild/Projects/libgee/gee/abstractcollection.vala /Users/mwild/Projects/libgee/gee/hashset.vala /Users/mwild/Projects/libgee/gee/{iterable.vala,collection.vala,abstractset.vala,iterator.vala,set.vala,functions.vala,comparable.vala,readonlycollection.vala,readonlyset.vala}
+otool -L ../../valadoc/build/prefix/lib/valadoc/plugins/html/libdoclet.so
+install_name_tool -id ../../valadoc-tmp/build/prefix/lib/valadoc/plugins/html/libdoclet.so prefix/lib/valadoc/plugins/html/libdoclet.so
+otool -L prefix/lib/valadoc/plugins/html/libdoclet.so
+man install_name_tool
+install_name_tool -id ../../valadoc-tmp/build/prefix/lib/valadoc/plugins/html/libdoclet.so $PWD/prefix/lib/valadoc/plugins/html/libdoclet.so
+otool -L prefix/lib/valadoc/plugins/html/libdoclet.so
+glibtool --help
+glibtool --help-modes
+glibtool --help --modes
+glibtool --help --mode=install
+rm -rf *
+ls -la
+cd ..
+git st
+git clean -f -x
+git st
+git diff
+cd build
+PATH=/sw/bin:$PATH ../autogen.sh PKG_CONFIG_PATH=$HOME/Library/homebrew/lib/pkgconfig:$HOME/Projects/libgee/build/prefix/lib/pkgconfig:/sw/lib/pkgconfig VALAFLAGS="--vapidir $HOME/Projects/libgee/build/prefix/share/vala/vapi" CPPFLAGS="-I$HOME/Library/homebrew/include" PATH=$HOME/Projects/vala/build/prefix/bin:$PATH --prefix=$PWD/prefix
+make install
+/Users/mwild/Projects/valadoc-tmp/build/prefix/bin/valadoc --doclet=html -o /Users/mwild/Projects/libgee/build/doc/gee-1.0/ --wiki /Users/mwild/Projects/libgee/doc --force -b /Users/mwild/Projects/libgee --vapidir /Users/mwild/Projects/vala/build/vapi /Users/mwild/Projects/libgee/gee/abstractcollection.vala /Users/mwild/Projects/libgee/gee/hashset.vala /Users/mwild/Projects/libgee/gee/{iterable.vala,collection.vala,abstractset.vala,iterator.vala,set.vala,functions.vala,comparable.vala,readonlycollection.vala,readonlyset.vala}
+make install
+vi ValaCreateVapi.cmake.in
+vi UseVala.cmake
+vi ../gee/CMakeLists.txt
+cmake .
+make
+fg
+man cmake
+cd ../../valadoc
+vi src/libvaladoc/CMakeLists.txt
+cd build
+make install
+vi ../src/libvaladoc/CMakeLists.txt
+ls
+git st
+rm -rf *
+ccmake ..
+pwd
+fg
+rm -rf prefix
+make -j2 install
+otool -L prefix/bin/valac
+rm -rf *
+ccmake ..
+ccmake .
+ls
+vi ../CMakeLists.txt
+cmake ..
+vi ../CMakeLists.txt
+cmake .
+vi ../CMakeLists.txt
+make install
+rm -rf *
+Vala_DIR=$HOME/Projects/vala/build/prefix/share/vala/cmake ccmake ..
+make
+otool -L gee/libgee.0.5.1.dylib
+make install
+rm -rf *
+Vala_DIR=$HOME/Projects/vala/build/prefix/share/vala/cmake Gee_DIR=$HOME/Projects/libgee/build/prefix/share/gee/cmake ccmake ..
+cmake .
+/sw/bin/fink search graphviz
+/sw/bin/fink list graphviz
+PATH=/sw/bin:$PATH fink install graphviz-dev
+su admin
+Vala_DIR=$HOME/Projects/vala/build/prefix/share/vala/cmake Gee_DIR=$HOME/Projects/libgee/build/prefix/share/gee/cmake ccmake ..
+make install
+make install
+/Users/mwild/Projects/valadoc-tmp/build/prefix/bin/valadoc --doclet=html -o /Users/mwild/Projects/libgee/build/doc/gee-1.0/ --wiki /Users/mwild/Projects/libgee/doc --force -b /Users/mwild/Projects/libgee --vapidir /Users/mwild/Projects/vala/build/vapi /Users/mwild/Projects/libgee/gee/abstractcollection.vala /Users/mwild/Projects/libgee/gee/hashset.vala /Users/mwild/Projects/libgee/gee/{iterable.vala,collection.vala,abstractset.vala,iterator.vala,set.vala,functions.vala,comparable.vala,readonlycollection.vala,readonlyset.vala}
+otool -L prefix/bin/valadoc
+man dyld
+DYLD_PRINT_LIBRARIES=yes /Users/mwild/Projects/valadoc-tmp/build/prefix/bin/valadoc --doclet=html -o /Users/mwild/Projects/libgee/build/doc/gee-1.0/ --wiki /Users/mwild/Projects/libgee/doc --force -b /Users/mwild/Projects/libgee --vapidir /Users/mwild/Projects/vala/build/vapi /Users/mwild/Projects/libgee/gee/abstractcollection.vala /Users/mwild/Projects/libgee/gee/hashset.vala /Users/mwild/Projects/libgee/gee/{iterable.vala,collection.vala,abstractset.vala,iterator.vala,set.vala,functions.vala,comparable.vala,readonlycollection.vala,readonlyset.vala}
+DYLD_PRINT_LIBRARIES=yes /Users/mwild/Projects/valadoc-tmp/build/prefix/bin/valadoc --doclet=html -o /Users/mwild/Projects/libgee/build/doc/gee-1.0/ --wiki /Users/mwild/Projects/libgee/doc --force -b /Users/mwild/Projects/libgee --vapidir /Users/mwild/Projects/vala/build/vapi /Users/mwild/Projects/libgee/gee/abstractcollection.vala /Users/mwild/Projects/libgee/gee/hashset.vala /Users/mwild/Projects/libgee/gee/{iterable.vala,collection.vala,abstractset.vala,iterator.vala,set.vala,functions.vala,comparable.vala,readonlycollection.vala,readonlyset.vala} |& less
+env | grep homebrew
+otool -L /Users/mwild/Projects/valadoc-tmp/build/prefix/lib/libvaladoc.0.dylib | grep home
+/Users/mwild/Projects/valadoc/build/prefix/bin/valadoc --doclet=html -o /Users/mwild/Projects/libgee/build/doc/gee-1.0/ --wiki /Users/mwild/Projects/libgee/doc --force -b /Users/mwild/Projects/libgee --vapidir /Users/mwild/Projects/vala/build/vapi /Users/mwild/Projects/libgee/gee/abstractcollection.vala /Users/mwild/Projects/libgee/gee/hashset.vala /Users/mwild/Projects/libgee/gee/{iterable.vala,collection.vala,abstractset.vala,iterator.vala,set.vala,functions.vala,comparable.vala,readonlycollection.vala,readonlyset.vala}
+DYLD_PRINT_LIBRARIES=yes /Users/mwild/Projects/valadoc/build/prefix/bin/valadoc --doclet=html -o /Users/mwild/Projects/libgee/build/doc/gee-1.0/ --wiki /Users/mwild/Projects/libgee/doc --force -b /Users/mwild/Projects/libgee --vapidir /Users/mwild/Projects/vala/build/vapi /Users/mwild/Projects/libgee/gee/abstractcollection.vala /Users/mwild/Projects/libgee/gee/hashset.vala /Users/mwild/Projects/libgee/gee/{iterable.vala,collection.vala,abstractset.vala,iterator.vala,set.vala,functions.vala,comparable.vala,readonlycollection.vala,readonlyset.vala} |& less
+cd .
+cd ..
+git st
+git fetch
+git pull
+gdb /Users/mwild/Projects/valadoc/build/prefix/bin/valadoc --doclet=html -o /Users/mwild/Projects/libgee/build/doc/gee-1.0/ --wiki /Users/mwild/Projects/libgee/doc --force -b /Users/mwild/Projects/libgee --vapidir /Users/mwild/Projects/vala/build/vapi /Users/mwild/Projects/libgee/gee/abstractcollection.vala /Users/mwild/Projects/libgee/gee/hashset.vala /Users/mwild/Projects/libgee/gee/{iterable.vala,collection.vala,abstractset.vala,iterator.vala,set.vala,functions.vala,comparable.vala,readonlycollection.vala,readonlyset.vala}
+gdb '/Users/mwild/Projects/valadoc/build/prefix/bin/valadoc --doclet=html -o /Users/mwild/Projects/libgee/build/doc/gee-1.0/ --wiki /Users/mwild/Projects/libgee/doc --force -b /Users/mwild/Projects/libgee --vapidir /Users/mwild/Projects/vala/build/vapi /Users/mwild/Projects/libgee/gee/abstractcollection.vala /Users/mwild/Projects/libgee/gee/hashset.vala /Users/mwild/Projects/libgee/gee/{iterable.vala,collection.vala,abstractset.vala,iterator.vala,set.vala,functions.vala,comparable.vala,readonlycollection.vala,readonlyset.vala}'
+man gdb
+echo /Users/mwild/Projects/valadoc/build/prefix/bin/valadoc --doclet=html -o /Users/mwild/Projects/libgee/build/doc/gee-1.0/ --wiki /Users/mwild/Projects/libgee/doc --force -b /Users/mwild/Projects/libgee --vapidir /Users/mwild/Projects/vala/build/vapi /Users/mwild/Projects/libgee/gee/abstractcollection.vala /Users/mwild/Projects/libgee/gee/hashset.vala /Users/mwild/Projects/libgee/gee/{iterable.vala,collection.vala,abstractset.vala,iterator.vala,set.vala,functions.vala,comparable.vala,readonlycollection.vala,readonlyset.vala}
+gdb /Users/mwild/Projects/valadoc/build/prefix/bin/valadoc
+man ulimit
+man zshbuiltins
+ulimit -c
+ulimit -s unlimited
+ulimit -c unlimited
+ulimit -s
+ulimit -s 8192
+/Users/mwild/Projects/valadoc/build/prefix/bin/valadoc --doclet=html -o /Users/mwild/Projects/libgee/build/doc/gee-1.0/ --wiki /Users/mwild/Projects/libgee/doc --force -b /Users/mwild/Projects/libgee --vapidir /Users/mwild/Projects/vala/build/vapi /Users/mwild/Projects/libgee/gee/abstractcollection.vala /Users/mwild/Projects/libgee/gee/hashset.vala /Users/mwild/Projects/libgee/gee/{iterable.vala,collection.vala,abstractset.vala,iterator.vala,set.vala,functions.vala,comparable.vala,readonlycollection.vala,readonlyset.vala}
+ls
+ls -la
+ls /cores
+ls -lh /cores
+su admin
+ulimit -c 0
+man estapur
+man estabur
+git st
+stg series
+cd ..
+git add cmake
+stg refresh -p added-cmake-build-system
+git st
+git remote -v show
+git push --force github
+git push --force origin
+cd ..
+git branch
+git branch -m gnome/master
+git remote add themiwi git@github.com:themiwi/libgee.git
+git branch -a
+man git-branch
+git branch --no-track master gnome/master
+git branch --no-track master remotes/gnome/master
+git co master
+git push themiwi master gnome/master
+ls
+git st
+ls cmake
+git add CMakeLists.txt benchmark cmake doc gee
+git st
+git ci
+git push themiwi
+git remote add themiwi git@github.com:themiwi/Valadoc.git
+git branch -m gnome/master
+git branch --no-track master remotes/gnome/master
+git co master
+git st
+git add CMakeLists.txt cmake src
+vi cmake/*
+git ci -m "Added CMake build system"
+git st
+git add icons
+git ci --amend
+git st
+git push themiwi master gnome/master
+ssh eifel
+git push themiwi --tags
+git push github --tags
+print -l **/generated(/)
+print -l **/generated(/) | grep -v build
+rsync -r `print -l **/generated(/) | grep -v build` eifel:tmp/vala/
+ls ..
+cmake .
+ccmake .
+print -l **/generated(/) | grep -v build | while read d; do rsync -r $d eifel:tmp/vala/$d; done
+print -l **/generated(/) | grep -v build | while read d; do rsync -r $d eifel:tmp/vala/$(dirname $d); done
+ssh -X eifel
+ls
+brew list gdk
+brew search gdk
+ls
+cd run/sandiaD/
+ls
+rsync -avzP eifel:/local/mwild/pdf2dfv/run/sandiaD/ex_co_003 .
+mkdir post
+cd post
+cp -r ~/phd/presentations/2010-02-18-Braunwald/figs/*.asy .
+ls
+vi make_plots.asy
+vi setup_plot.asy
+asy make_plots.asy
+cd ..
+cp ex_co_002-1/post/extract_data.m post
+mv post ex_co_003
+cd ex_co_003/post
+ls
+vi extract_data.m
+which matlab
+matlab
+bg
+ls
+ls dat
+ls
+vi setup_plot.asy
+mkdir figs
+mv *.asy figs
+cd figs
+ls
+asy make_plots.asy
+env | grep HIST
+vi ~/.zshenv
+grep -ri HIST ~/Library/homebrew/Cellar/zsh
+grep -rIs HIST ~/Library/homebrew/Cellar/zsh
+grep -rIs HISTSIZE ~/Library/homebrew/Cellar/zsh
+grep -rIs HISTSIZE ~/Library/homebrew/Cellar/zsh-templates
+vi /Users/mwild/Library/homebrew/Cellar/zsh-templates/2.0.4/share/zsh/templates/Library/init/zsh/zshrc.d/111_environment.options.zsh
+fg
+EUID
+echo $EUID
+fg
+env | grep HIST
+fg
+source ~/.zshenv
+source ~/.zshenv
+vi /sw/include/gtk-2.0/gdk-pixbuf/gdk-pixbuf-features.h
+cd ../valadoc
+git st
+git add config.h.in
+git add -f config.h.in
+git st
+git ci -a --amend
+git push --force
+vi .git/config
+git push --force
+man cmake
+git tag
+vi vala-1.0.pc.in
+vi CMakeLists.txt
+git show gnome/master:vala-1.0.pc.in
+git show gnome/master:configure.ac
+fg
+ssh -X eifel
+man cmake
+man cmake
+man git-pull
+git pull --squash ssh://eifel/home/mwild/tmp/Valadoc
+git st
+git pull --squash ssh://eifel/home/mwild/tmp/Valadoc master
+git st
+git diff
+git show
+cd ../libgee
+git log
+git pull --squash ssh://eifel/home/mwild/tmp/libgee master
+git st
+git diff --cached
+git log
+git ci --amend
+git push --force
+vi .git/config
+git push --force
+ls
+cd ..
+cd vala
+git st
+git diff
+git log
+git ci -a
+git st
+git log
+vi ../libgee/CMakeLists.txt
+git pull --squash ssh://eifel/home/mwild/tmp/vala master
+git st
+git diff
+git diff --cached
+git st
+stg series
+stg refresh -p added-cmake-build-system
+git stash
+git st
+stg repair
+stg series
+stg squash added-cmake-build-system fix-vala-1-0-pc-info
+stg series
+git stash pop
+stg refresh -p added-cmake-build-system
+stg series
+git push --force
+git push --force github
+git push --force origin
+git st
+ls
+cd ../libgee
+git st
+vi CMakeLists.txt
+man cmake
+git st
+git ci --amend
+git push --force
+git st
+git ci -a --amend
+git push --force
+cd ../valadoc
+git st
+git pull --squash ssh://eifel/home/mwild/tmp/Valadoc master
+git st
+git ci --amend
+git st
+git push --force
+vi CMakeLists.txt
+grep -r TODO .
+ls
+ls ico
+ls icons
+cd src/libvaladoc
+ls
+ls documentation
+cd ../..
+cd ../libgee
+ls
+vi tests/Makefile.am
+vi Makefile.decl
+which gtester
+ls benchmark
+vi benchmark/CMakeLists.txt
+vi benchmark/Makefile.am
+ls
+vi Makefile.decl
+git grep TEST_PROGS
+vi Makefile.decl
+git grep GTESTER_LOGDIR
+fg
+cd tests
+ls
+vi Makefile.am
+vi testlist.vala
+vi CMakeLists.txt
+cp Makefile.am CMakeLists.txt
+vi CMakeLists.txt
+git grep TEST_PROGS
+fg
+man gcov
+brew search lcov
+ssh venant
+ssh eifel
+clear
+man cmake
+man cmake
+man lcov
+man cmake
+man cmake
+man lcov
+stty sane
+man lcov
+cmake -E help
+git describe
+git describe --dirty
+fg
+git log -1 --pretty=format:%h
+fg
+git tag
+fg
+git describe --dirty
+fg
+man cmake
+man gemrc
+man cmake
+exit
+ls
+vi ../gee/hashmap.vala
+fg
+cd
+cd Projects/libgee/
+cd gee
+ls
+grep -r namespace .
+vi functions.vala
+git grep cheader .
+git grep -w params
+git grep -w PARAMS
+git grep params vapi
+git grep -w params vapi
+vi vapi/glib-2.0.vapi
+git grep -w PARAMS
+vi vala/valagenietokentype.vala
+vi vala/valaparser.vala
+vi vala/valatokentype.vala
+vi vala/valascanner.vala
+vi vala/valaparser.vala
+vi vapi/rest.vapi
+fg
+fg
+vi vala/valaparser.vala
+vi vala/valatokentype.vala
+fg
+git grep 'instance_' .
+cd build
+make install
+./prefix/bin/valac --pkg mpi
+make install
+make install
+make install
+make install
+make install
+make install
+make install
+make install
+make install
+make install
+make install
+make install
+make install
+make install
+ls
+make install
+make install
+make install
+make install
+make install
+vi deque.vala
+make install
+make install
+make install
+make install
+make install
+make install
+make install
+make install
+make install
+make install
+make install
+grep -ri slice ../tests
+vi ../tests/basic-types/arrays.vala
+git log
+git show b11136ecc53dacf3b2f41b3a18230686cc85e300
+git grep has_construct_function ..
+git grep has_construct_function .. | grep -v vapi
+vi ../ChangeLog.pre-0-4
+exit
+exit
+exit
+exit

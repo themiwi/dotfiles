@@ -1,0 +1,5 @@
+[core]
+baseurl = https://hdb.andritz.com/services/api/
+
+[auth]
+user = ANDRITZ\zrhsaltr01

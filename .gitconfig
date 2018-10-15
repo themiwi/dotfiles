@@ -1,0 +1,69 @@
+# vim: set noexpandtab sw=8 ts=8
+[user]
+	name = Michael Wild
+	email = michael.wild@andritz.com
+	signingkey = 0xbc4764ec
+[merge]
+	tool = vimdiff
+[alias]
+	ci = commit -s
+	co = checkout
+	st = status
+	ns = show --name-status
+	pi = cherry-pick
+	#lpo = log --pretty=oneline --abbrev-commit --graph --decorate
+	lpo = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold dim yellow)%h%C(reset) - %C(bold blue)(%ar)%C(reset) %C(black)%s%C(reset) %C(dim red)- %an%C(reset)%C(bold red)%d%C(reset)' --all
+	oldest-ancestor = !zsh -c 'diff --old-line-format= --new-line-format= <(git rev-list --first-parent \"${1:-master}\") <(git rev-list --first-parent \"${2:-HEAD}\") | head -1' -
+[color]
+	ui = auto
+        #pager = false
+	#diff = false
+[diff]
+	renames = copies
+	renameLimit = 100000
+	tool = vimdiff
+[github]
+	user = themiwi
+	token = bb825876aafbfcfcf2a2d92489e7ff59
+[mergetool]
+	prompt = false
+[sendemail]
+  smtpserver = smtp.miba.li
+  smtpuser = mi@miba.li
+  smtpencryption = tls
+[stgit]
+  smtpserver = smtp.miba.li
+  smtpuser = mi@miba.li
+  smtptls = yes
+[core]
+	autocrlf = input
+	pager = less -x5,9
+	filemode = false
+
+#[merge "dpkg-mergechangelogs"]
+#	name = debian/changelog merge driver
+#	driver = dpkg-mergechangelogs -m %O %A %B %A
+#
+[rebase]
+	autosquash = true
+
+[push]
+	default = upstream
+
+[url "ssh://git@github.com/"]
+	insteadOf = gh:
+	insteadOf = gh:~
+
+[url "ssh://teamforge.andritz.com:29418/"]
+	insteadOf = tf:
+[rerere]
+	enabled = true
+#[filter "trinWhiteSpace"]
+#	clean = git-stripspace
+#[http]
+#	proxy = http://zrhuse04:Linux123@www.google.com:80
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
