@@ -12,7 +12,9 @@ dotfiles: ## Installs the dotfiles.
 		ln -sfn $$file $(HOME)/$$f; \
 	done
 	\
-	gpg --list-keys || true;
+	mkdir -p $(HOME)/.gnupg
+	chmod 0700 $(HOME)/.gnupg
+	gpg2 --list-keys || true;
 	\
 	for d in $(SPECIALDIRS); do \
 		mkdir -p $(HOME)/$$d; \
