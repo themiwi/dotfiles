@@ -1,0 +1,72 @@
+[submodule ".vim/bundle/commentary"]
+	path = .vim/bundle/commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule ".vim/bundle/dadbod"]
+	path = .vim/bundle/dadbod
+	url = https://github.com/tpope/vim-dadbod.git
+[submodule ".vim/bundle/editorconfig-vim"]
+	path = .vim/bundle/editorconfig
+	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule ".vim/bundle/eunuch"]
+	path = .vim/bundle/eunuch
+	url = https://github.com/tpope/vim-eunuch.git
+[submodule ".vim/bundle/git"]
+	path = .vim/bundle/vim-git
+	url = https://github.com/tpope/vim-git.git
+[submodule ".vim/bundle/gnupg"]
+	path = .vim/bundle/gnupg
+	url = https://github.com/jamessan/vim-gnupg
+[submodule ".vim/bundle/jdaddy"]
+	path = .vim/bundle/jdaddy
+	url = https://github.com/tpope/vim-jdaddy.git
+[submodule ".vim/bundle/markdown"]
+	path = .vim/bundle/markdown
+	url = https://github.com/plasticboy/vim-markdown.git
+[submodule ".vim/bundle/minibufexpl.vim"]
+	path = .vim/bundle/minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule ".vim/bundle/nuuid"]
+	path = .vim/bundle/nuuid
+	url = https://github.com/kburdett/vim-nuuid.git
+[submodule ".vim/bundle/PreserveNoEOL"]
+	path = .vim/bundle/PreserveNoEOL
+	url = https://github.com/vim-scripts/PreserveNoEOL.git
+[submodule ".vim/bundle/ragtag"]
+	path = .vim/bundle/ragtag
+	url = https://github.com/tpope/vim-ragtag.git
+[submodule ".vim/bundle/sensible"]
+	path = .vim/bundle/sensible
+	url = https://github.com/tpope/vim-sensible.git
+[submodule ".vim/bundle/ShowTrailingWhitespace"]
+	path = .vim/bundle/ShowTrailingWhitespace
+	url = https://github.com/vim-scripts/ShowTrailingWhitespace.git
+[submodule ".vim/bundle/sleuth"]
+	path = .vim/bundle/sleuth
+	url = https://github.com/tpope/vim-sleuth.git
+[submodule ".vim/bundle/surround"]
+	path = .vim/bundle/surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule ".vim/bundle/tabular"]
+	path = .vim/bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
+[submodule ".vim/bundle/tbone"]
+	path = .vim/bundle/tbone
+	url = https://github.com/tpope/vim-tbone.git
+[submodule ".vim/bundle/typescript-vim"]
+	path = .vim/bundle/typescript
+	url = https://github.com/leafgarland/typescript-vim.git
+[submodule ".vim/bundle/colors-solarized"]
+	path = .vim/bundle/colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule ".vim/bundle/fugitive"]
+	path = .vim/bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule ".vim/bundle/ps1"]
+	path = .vim/bundle/ps1
+	url = https://github.com/PProvost/vim-ps1.git
+[submodule ".vim/bundle/tomorrow-theme"]
+	path = .vim/bundle/tomorrow-theme
+	url = https://github.com/chriskempson/vim-tomorrow-theme.git
+[submodule ".vim/bundle/vinegar"]
+	path = .vim/bundle/vinegar
+	url = https://github.com/tpope/vim-vinegar.git
