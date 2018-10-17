@@ -11,10 +11,10 @@ if [ ! -f .git/hooks/pre-commit ]; then
   sed -i'' 's/exec git diff-index/#&/' .git/hooks/pre-commit
   cat >> .git/hooks/pre-commit << 'EOF'
 
-# verify that the SMTP_PASSWORD is not committed
+# verify that the SMTP_PASS is not committed
 if git grep -q --cached '^\s*SMTP_PASS' -- .cygport.conf
 then
-  >&2 echo "Error: Attempt to commit the SMTP_PASSWORD in .cygport.conf."
+  >&2 echo "Error: Attempt to commit the SMTP_PASS in .cygport.conf."
   exit 1
 fi
 EOF
