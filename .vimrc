@@ -166,9 +166,10 @@ autocmd BufNewFile,BufRead fugitive://* set bufhidden=delete
 syntax enable
 set background=dark
 "set background=light
-let g:solarized_visibility="low"
+"let g:solarized_visibility="low"
 "let g:solarized_visibility="high"
-colorscheme solarized
+"colorscheme solarized
+colorscheme gruvbox
 set listchars=tab:\ ,eol:¬,trail:~,extends:>,precedes:<,space:·
 
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
