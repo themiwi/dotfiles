@@ -14,7 +14,7 @@ dotfiles: ## Installs the dotfiles.
 	\
 	mkdir -p $(HOME)/.gnupg
 	chmod 0700 $(HOME)/.gnupg
-	gpg2 --list-keys || true;
+	gpg --list-keys || true;
 	\
 	for d in $(SPECIALDIRS); do \
 		mkdir -p $(HOME)/$$d; \
