@@ -7,7 +7,7 @@ all: dotfiles
 .PHONY: dotfiles
 SPECIALDIRS=.config .gnupg .httpie
 dotfiles: ## Installs the dotfiles.
-	for file in $(shell find $(CURDIR) -name ".*" -not -name ".gitignore" -not -name ".git" -not -name ".*.swp" $(addprefix "-not -name ",$(SPECIALDIRS)) -not -name .cygport.conf -not -name .cygport.conf.passwd); do \
+	for file in $(shell find $(CURDIR) -name ".*" -not -name ".gitignore" -not -name ".git" -not -name ".*.swp" $(addprefix -not -name ,$(SPECIALDIRS)) -not -name .cygport.conf -not -name .cygport.conf.passwd); do \
 		f=$$(basename $$file); \
 		ln -sfn $$file $(HOME)/$$f; \
 	done
