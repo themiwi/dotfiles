@@ -31,6 +31,7 @@
 [submodule ".vim/bundle/PreserveNoEOL"]
 	path = .vim/bundle/PreserveNoEOL
 	url = https://github.com/vim-scripts/PreserveNoEOL.git
+	ignore = untracked
 [submodule ".vim/bundle/ragtag"]
 	path = .vim/bundle/ragtag
 	url = https://github.com/tpope/vim-ragtag.git
@@ -40,6 +41,7 @@
 [submodule ".vim/bundle/ShowTrailingWhitespace"]
 	path = .vim/bundle/ShowTrailingWhitespace
 	url = https://github.com/vim-scripts/ShowTrailingWhitespace.git
+	ignore = untracked
 [submodule ".vim/bundle/sleuth"]
 	path = .vim/bundle/sleuth
 	url = https://github.com/tpope/vim-sleuth.git
