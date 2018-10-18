@@ -55,3 +55,4 @@ BoldWhite=253,246,227
 ThemeFile=gruvbox.minttyrc
 
 LigaturesSupport=1
+Charwidth=unicode
