@@ -30,7 +30,6 @@ fi
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh /usr/bin/lesspipe)"
 
 # Custom tools
-path=(/drives/d/Software/asciidoc-8.6.9/bin $path)
 path=($HOME/bin $path)
 path=($HOME/.local/bin $path)
 
