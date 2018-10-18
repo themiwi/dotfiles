@@ -20,7 +20,7 @@ dotfiles: ## Installs the dotfiles.
 		mkdir -p $(HOME)/$$d; \
 	done
 	\
-	for file in $(shell ls -1 $(addsuffix /*,$(addprefix $(CURDIR)/,$(SPECIALDIRS)))); do \
+	for file in $(shell find $(addprefix $(CURDIR)/,$(SPECIALDIRS)) -mindepth 1 -maxdepth 1); do \
 		f=$$(basename $$(dirname $$file))/$$(basename $$file); \
 		ln -sfn $$file $(HOME)/$$f; \
 	done
