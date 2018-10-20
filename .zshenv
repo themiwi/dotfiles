@@ -39,3 +39,6 @@ path=($HOME/.local/bin $path)
 #export M2_HOME='D:\Software\apache-maven-3.2.3'
 export JAVA_HOME='C:\Program Files\Java\jre1.7.0_55'
 #alias mvn=mvn.bat
+
+# create windows symlinks
+CYGWIN=winsymlinks:nativestrict
