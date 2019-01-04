@@ -42,3 +42,5 @@ export JAVA_HOME='C:\Program Files\Java\jre1.7.0_55'
 
 # create windows symlinks
 CYGWIN=winsymlinks:nativestrict
+
+VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
