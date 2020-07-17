@@ -196,3 +196,6 @@
 # }
 # 
 # alias cd=cd_func
+
+# ssh-pageant
+eval $(/usr/bin/ssh-pageant -r -a "/tmp/.ssh-pageant-$USERNAME")

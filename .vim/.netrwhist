@@ -1,8 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/drives/c/Work/Projects/jenkins_dockerfiles/base_build_container_linux_alpine3.8'
-let g:netrw_dirhist_2='/drives/c/Users/zrhmic03/.asciidoc'
-let g:netrw_dirhist_3='/drives/c/Users/zrhmic03/.asy'
-let g:netrw_dirhist_4='/drives/c/Users/zrhmic03/.cufflinks'
-let g:netrw_dirhist_5='/drives/c/Users/zrhmic03/.ptpython'
-let g:netrw_dirhist_6='/drives/c/Users/zrhmic03/.quicktype'
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/usr/src/pkgs/python-bcrypt'
+let g:netrw_dirhist_3='/drives/c/Projects/ansible-playbook-lab'
+let g:netrw_dirhist_2='/drives/c/Projects/zrh_layouttool/01_Program/HydroLib.Controls/Chart'
+let g:netrw_dirhist_1='/drives/c/Users/zrhmic03/source/repos/ANDRITZ.Controls.FileDialog/MSBuild'
